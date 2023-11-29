@@ -63,6 +63,8 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             ElevatedButton(
                 style: ElevatedButton.styleFrom(
+                    fixedSize: const Size(180, 50),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30),),
                     backgroundColor: Colors.redAccent[700]),
                 onPressed: () {
                   Navigator.of(context)

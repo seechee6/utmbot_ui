@@ -16,12 +16,12 @@ class _ChatBotState extends State<ChatBot> {
     return Scaffold(
       backgroundColor: Colors.red[50],
       appBar: AppBar(
-        
-        title: Row(
+        elevation:0,
+        title: const Row(
           children: [
-            const CircleAvatar(backgroundImage: AssetImage('assets/botpp.png',),),
-            const SizedBox(width: 20,),
-            Text('UTMbot',style: TextStyle(color: Colors.red[950],fontWeight: FontWeight.bold,fontSize: 25),),
+             CircleAvatar(backgroundImage: AssetImage('assets/botpp.png',),),
+             SizedBox(width: 20,),
+            Text('UTMbot',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 25),),
           ],
         ),
         backgroundColor: Colors.red[50],
@@ -31,7 +31,7 @@ class _ChatBotState extends State<ChatBot> {
                 return const MyHomePage();
               })));
             },
-            icon:const Icon(Icons.arrow_back_ios)),
+            icon:const Icon(Icons.arrow_back_ios,color: Colors.black,)),
       ),
       body: Container(
         padding: const EdgeInsets.only(left: 25,right: 25,top:25),
